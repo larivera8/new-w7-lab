@@ -29,13 +29,18 @@ class car:
     def fullspecs(self):
         return self.model + ' ' + str(self.year) + self.manufacturer + ' '+self .type + ' ' +
          self.color
-
+'''
+indentation error.
+The codes not belong to class definition should be same level with class.
+year is string type data: 2012->"2012"
+'''
     car1 = car("Nissan", "GT-R", "Sports", 2012, "Blue")
-    car2 = car("Toyota", "Corolla", "Sedan", 2020, "Black")
+#car1 = car("Nissan", "GT-R", "Sports", "2021", "Blue")
+car2 = car("Toyota", "Corolla", "Sedan", "2020", "Black")
 
-    print(car1.get_color())
-    print(car1.get_model())
-    print(car2.get_color())
-    print(car2.get_model())
-    print(car1.fullspecs())
-    print(car2.fullspecs())
+print(car1.get_color())
+print(car1.get_model())
+print(car2.get_color())
+print(car2.get_model())
+print(car1.fullspecs())
+print(car2.fullspecs())
